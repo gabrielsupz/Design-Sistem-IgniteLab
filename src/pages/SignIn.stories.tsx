@@ -8,20 +8,7 @@ export default {
   title: 'Pages/SignIn',
   component: SignIn,
   args: {},
-  argTypes: {},
-  parameters: {
-    // msw: {
-    //   handlers: [
-    //     rest.post('/sessions', (req, res, ctx) => {
-    //       return res(
-    //         ctx.json({
-    //           message: 'Login realizado!'
-    //         })
-    //       )
-    //     })
-    //   ]
-    // }
-  }
+  argTypes: {}
 } as Meta
 export const Normal: StoryObj = {}
 export const Filled: StoryObj = {
