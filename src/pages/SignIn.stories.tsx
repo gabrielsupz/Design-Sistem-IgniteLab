@@ -23,8 +23,8 @@ export default {
     }
   }
 } as Meta
-
-export const Default: StoryObj = {
+export const Normal: StoryObj = {}
+export const Filled: StoryObj = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
 
