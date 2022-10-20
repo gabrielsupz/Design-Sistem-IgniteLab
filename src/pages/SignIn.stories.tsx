@@ -10,17 +10,17 @@ export default {
   args: {},
   argTypes: {},
   parameters: {
-    msw: {
-      handlers: [
-        rest.post('/sessions', (req, res, ctx) => {
-          return res(
-            ctx.json({
-              message: 'Login realizado!'
-            })
-          )
-        })
-      ]
-    }
+    // msw: {
+    //   handlers: [
+    //     rest.post('/sessions', (req, res, ctx) => {
+    //       return res(
+    //         ctx.json({
+    //           message: 'Login realizado!'
+    //         })
+    //       )
+    //     })
+    //   ]
+    // }
   }
 } as Meta
 export const Normal: StoryObj = {}

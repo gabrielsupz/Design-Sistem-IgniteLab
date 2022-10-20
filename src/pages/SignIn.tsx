@@ -11,17 +11,18 @@ import { FormEvent, useState } from 'react'
 export function SignIn() {
   const [isUserSignedIn, setIsUserSignedIn] = useState(false)
 
-  async function handleSignIn(event: FormEvent) {
-    event.preventDefault()
+  // Para realizar testes, descomente aqui e na stories
+  // async function handleSignIn(event: FormEvent) {
+  //   event.preventDefault()
 
-    await axios.post('/sessions'),
-      {
-        email: 'gabrielsuptitz@gmail.com',
-        password: '1213124214'
-      }
+  //   await axios.post('/sessions'),
+  //     {
+  //       email: 'gabrielsuptitz@gmail.com',
+  //       password: '1213124214'
+  //     }
 
-    setIsUserSignedIn(true)
-  }
+  //   setIsUserSignedIn(true)
+  // }
 
   return (
     <div className=" flex flex-col w-screen h-screen bg-gray-900 flez items-center justify-center text-gray-100">
@@ -34,7 +35,7 @@ export function SignIn() {
         </Text>
       </header>
       <form
-        onSubmit={handleSignIn}
+        // onSubmit={handleSignIn}
         className="flex flex-col w-full max-w-sm mt-10 items-stretch gap-4"
       >
         {isUserSignedIn && <Text>Login realizado!</Text>}
