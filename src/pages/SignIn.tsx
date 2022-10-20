@@ -19,10 +19,7 @@ export function SignIn() {
           Faça login e comece a usar!
         </Text>
       </header>
-      <form
-        // onSubmit={handleSignIn}
-        className="flex flex-col w-full max-w-sm mt-10 items-stretch gap-4"
-      >
+      <form className="flex flex-col w-full max-w-sm mt-10 items-stretch gap-4">
         <label htmlFor="email" className="flex flex-col gap-3 ">
           <Text className="font-semibold">Endereço de e-mail</Text>
           <TextInput.Root>
